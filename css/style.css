@@ -307,7 +307,7 @@ template {
   margin: 0 auto; }
   @media (max-width: 750px) {
     .container {
-      width: 620px;
+      width: 700px;
       margin: 0 auto; } }
   @media (max-width: 320px) {
     .container {
@@ -315,17 +315,7 @@ template {
       margin: 0 auto; } }
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden; }
+  font-size: 0; }
 
 body {
   margin: 0;
@@ -349,6 +339,9 @@ html {
 .advantages {
   min-width: 1430px;
   padding-top: 99px; }
+  @media (max-width: 750px) {
+    .advantages {
+      padding-top: 54px; } }
 
 .advantages__list {
   margin: 0;
@@ -364,6 +357,12 @@ html {
           justify-content: center;
   margin-bottom: 50px;
   padding-left: 25px; }
+  @media (max-width: 750px) {
+    .advantages__list {
+      padding-left: 0;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .advantages__item {
   position: relative;
@@ -382,8 +381,18 @@ html {
     width: 3px;
     height: 267px;
     background-color: #00B2FF; }
+    @media (max-width: 750px) {
+      .advantages__item::before {
+        height: 305px; } }
   .advantages__item:nth-child(odd) {
     margin-right: 30px; }
+    @media (max-width: 750px) {
+      .advantages__item:nth-child(odd) {
+        margin-right: 0; } }
+  @media (max-width: 750px) {
+    .advantages__item {
+      width: 345px;
+      height: 306px; } }
 
 .advantages__item:hover {
   background-color: #00B2FF; }
@@ -435,6 +444,13 @@ html {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #FFFFFF; }
+  @media (max-width: 750px) {
+    .header-center__title {
+      width: 470px;
+      margin-left: 0;
+      font-size: 60px;
+      line-height: 70px;
+      letter-spacing: 0.07em; } }
 
 .header-center__text {
   position: relative;
@@ -457,11 +473,21 @@ html {
     left: 91px;
     top: 17px;
     background: #FFFFFF; }
+    @media (max-width: 750px) {
+      .header-center__text::before {
+        width: 33px;
+        left: 0; } }
+  @media (max-width: 750px) {
+    .header-center__text {
+      width: 384px;
+      padding-left: 7%;
+      font-size: 18px;
+      line-height: 156.8%; } }
 
 .header-center__link {
   display: block;
   padding: 16px 30px;
-  width: 25.5%;
+  width: 407px;
   margin-left: 174px;
   font-style: normal;
   font-weight: bold;
@@ -474,6 +500,10 @@ html {
   color: #FFFFFF;
   background: #00B2FF;
   border-radius: 5px; }
+  @media (max-width: 750px) {
+    .header-center__link {
+      width: 379px;
+      margin-left: 50px; } }
 
 .header-main {
   position: relative;
@@ -520,6 +550,10 @@ html {
   line-height: 14px;
   color: #788891;
   background: url(../img/header/icon-brain.svg) no-repeat; }
+  @media (max-width: 750px) {
+    .logo {
+      width: 30%;
+      margin-left: 0; } }
 
 .header-top__burger {
   position: relative;
@@ -542,6 +576,9 @@ html {
     width: 35px;
     height: 1px;
     background-color: #fff; }
+  @media (max-width: 750px) {
+    .header-top__burger {
+      margin-left: 51%; } }
 
 .header-top__list {
   margin: 0;
@@ -549,6 +586,10 @@ html {
   list-style: none;
   margin-left: 24%;
   margin-right: 3.3%; }
+  @media (max-width: 750px) {
+    .header-top__list {
+      margin-left: 4.5%;
+      margin-right: 0; } }
 
 .header-top__item {
   display: inline-block;
@@ -556,8 +597,18 @@ html {
   .header-top__item:nth-child(1) {
     margin-right: 54px;
     background: url(../img/header/email.svg) no-repeat 11px 6px; }
+    @media (max-width: 750px) {
+      .header-top__item:nth-child(1) {
+        margin-right: 0px;
+        background-position: 9px 6px; } }
   .header-top__item:nth-child(2) {
     background: url(../img/header/phone.svg) no-repeat 16px 4px; }
+    @media (max-width: 750px) {
+      .header-top__item:nth-child(2) {
+        background-position: 11px 3px; } }
+  @media (max-width: 750px) {
+    .header-top__item {
+      padding-left: 29px; } }
 
 .header-top__link {
   color: #fff;
@@ -575,6 +626,13 @@ html {
   text-transform: uppercase;
   border: 1px solid #fff;
   border-radius: 4px; }
+  @media (max-width: 750px) {
+    .header-top__link--order {
+      display: none; } }
+
+@media (max-width: 750px) {
+  .header-top__deck {
+    font-size: 0; } }
 
 .info {
   padding-top: 50px;
@@ -625,6 +683,9 @@ html {
   padding-top: 70px;
   padding-bottom: 100px;
   background: #00B2FF; }
+  @media (max-width: 750px) {
+    .questions {
+      padding-top: 83px; } }
 
 .questions__wrap {
   display: -webkit-box;
@@ -637,10 +698,18 @@ html {
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 179px 75px, left 87px top 20px, left 44px bottom -14px;
   background-size: 32%, 34.6%, 20%; }
+  @media (max-width: 750px) {
+    .questions__wrap {
+      background: none; } }
 
 .questions__form {
   width: 36%;
   margin-right: 174px; }
+  @media (max-width: 750px) {
+    .questions__form {
+      padding-left: 63px;
+      width: 100%;
+      margin-right: 0; } }
 
 .questions__title {
   margin: 0;
@@ -675,12 +744,23 @@ html {
   border: none; }
   .questions__input:nth-of-type(1) {
     margin-right: 12px; }
+    @media (max-width: 750px) {
+      .questions__input:nth-of-type(1) {
+        margin-right: 32px; } }
+  @media (max-width: 750px) {
+    .questions__input {
+      width: 42%;
+      height: 51px;
+      margin-bottom: 41px; } }
 
 .questions__input--text {
   width: 100%;
   height: 139px;
   margin-bottom: 26px;
   padding: 11px 15px; }
+  @media (max-width: 750px) {
+    .questions__input--text {
+      width: 92.7%; } }
 
 .btn {
   margin-right: 20px;
@@ -699,6 +779,9 @@ html {
           box-sizing: border-box;
   border-radius: 5px;
   background: transparent; }
+  @media (max-width: 750px) {
+    .btn {
+      padding: 14.5px 92px; } }
 
 .questions__agreement-label {
   position: relative;
@@ -727,6 +810,10 @@ html {
     background: url(../img/questions/tick.svg) no-repeat center;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
+  @media (max-width: 750px) {
+    .questions__agreement-label {
+      width: 39%;
+      margin-right: 46px; } }
 
 .questions__input::-webkit-input-placeholder {
   color: #fff; }
@@ -740,11 +827,19 @@ html {
 .questions__input::placeholder {
   color: #fff; }
 
+@media (max-width: 750px) {
+  .questions input[type="checkbox"] {
+    display: none; } }
+
 .service {
   min-width: 1430px;
   padding-top: 76px;
   padding-bottom: 112px;
   background-color: #1B2D37; }
+  @media (max-width: 750px) {
+    .service {
+      padding-top: 53px;
+      padding-bottom: 78px; } }
 
 .service__title {
   margin: 0;
@@ -756,6 +851,10 @@ html {
   font-size: 32px;
   line-height: 51px;
   color: #FFFFFF; }
+  @media (max-width: 750px) {
+    .service__title {
+      margin-left: 0;
+      margin-bottom: 46px; } }
 
 .service__list {
   margin: 0;
@@ -768,6 +867,12 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: -7px; }
+  @media (max-width: 750px) {
+    .service__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .service__item {
   position: relative;
@@ -778,8 +883,22 @@ html {
   background: url(../img/service/1-1.png) no-repeat center; }
   .service__item:nth-child(2) {
     background: url(../img/service/2.png) no-repeat center; }
+    @media (max-width: 750px) {
+      .service__item:nth-child(2) {
+        background-size: 100%; } }
   .service__item:nth-child(3) {
     background: url(../img/service/3-1.png) no-repeat center; }
+    @media (max-width: 750px) {
+      .service__item:nth-child(3) {
+        background-size: 100%; } }
+  @media (max-width: 750px) {
+    .service__item {
+      width: 100%;
+      height: 256px;
+      margin-bottom: 46px;
+      overflow: hidden;
+      background-size: contain;
+      outline: 1px solid red; } }
 
 .service__text {
   width: 57%;
@@ -840,6 +959,13 @@ html {
           box-sizing: border-box;
   background: url(../img/advantages/2005.png) no-repeat -26px 15px;
   background-size: 19%; }
+  @media (max-width: 750px) {
+    .about-us {
+      width: 100%;
+      padding-left: 231px;
+      padding-bottom: 83px;
+      background-position: -11px 8px;
+      background-size: 33%; } }
 
 .about-us__title {
   margin: 0;
@@ -873,6 +999,16 @@ html {
   text-decoration: none;
   border: 1px solid #00b2ff;
   border-radius: 4px; }
+
+.about-us__points {
+  display: none; }
+  @media (max-width: 750px) {
+    .about-us__points {
+      display: inline-block; } }
+
+@media (max-width: 750px) {
+  .about-us__deck {
+    display: none; } }
 
 .nav-footer {
   width: 40%;
