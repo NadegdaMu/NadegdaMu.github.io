@@ -347,6 +347,7 @@ html {
           box-sizing: inherit; }
 
 .advantages {
+  min-width: 1430px;
   padding-top: 99px; }
 
 .advantages__list {
@@ -412,6 +413,9 @@ html {
   line-height: 21px;
   color: #666666; }
 
+.footer-main {
+  min-width: 1430px; }
+
 .header-center {
   min-height: 458px;
   padding-top: 57px;
@@ -473,6 +477,7 @@ html {
 
 .header-main {
   position: relative;
+  min-width: 1430px;
   min-height: 670px;
   /*background-color: #1B2D37;*/
   background: #1B2D37 url(../img/header/bg-header.png) no-repeat;
@@ -616,6 +621,7 @@ html {
   background: url(../img/footer/wk.svg) no-repeat; }
 
 .questions {
+  min-width: 1430px;
   padding-top: 70px;
   padding-bottom: 100px;
   background: #00B2FF; }
@@ -735,6 +741,7 @@ html {
   color: #fff; }
 
 .service {
+  min-width: 1430px;
   padding-top: 76px;
   padding-bottom: 112px;
   background-color: #1B2D37; }
